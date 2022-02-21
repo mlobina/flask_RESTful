@@ -8,8 +8,8 @@ from resources.store import Store, StoreList
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/marina/PycharmProjects/flask_RESTful_app/data.sqlite'
-
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/marina/PycharmProjects/flask_RESTful_app/data.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.sqlite'
 app.config['PROPAGATE_EXCEPTIONS'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'veryverysecretkey'
